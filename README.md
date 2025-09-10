@@ -156,6 +156,36 @@ For questions, feedback, or collaboration:
 
 ---
 
+## flowchart
+## 🔄 Workflow Diagram
+
+```mermaid
+flowchart TD
+    A([START]) --> B[MODULE 1: USER PROFILING]
+    B --> C[Generate Synthetic Risk Profiles Dataset]
+    C --> D[Train Random Forest Classifier]
+    D --> E[Save Trained Risk Profiler Model]
+
+    E --> F[MODULE 2: ASSET ALLOCATION]
+    F --> G[Train K-Means Clustering Model]
+    G --> H{Optimal Cluster K?}
+    H --> I[Define Asset Allocation Map]
+    I --> J[Save Asset Allocator Model & Map]
+
+    J --> K[MODULE 3: DATA AGGREGATION]
+    K --> L[Compile Stock & Mutual Fund Historical Data]
+
+    L --> M[MODULE 4: ASSET FORECASTING]
+    M --> N[Train Prophet Models for Assets]
+    N --> O{R² Score >= 0.75?}
+    O -->|Yes| P[Store Forecast]
+    O -->|No| Q[Discard Forecast]
+    P --> R[Compile Stock & MF Forecasts]
+    Q --> R
+    R --> S[MODULE 5: PROJECT END]
+    S --> T([END])
+
+
 ## 📜 License
 This project is licensed under the **MIT License**. See the LICENSE file for details.
 
