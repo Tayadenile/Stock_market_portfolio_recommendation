@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+scipy
+plotly
+joblib
+mysql-connector-python
+bcrypt
+email-validator
+yfinance
+openpyxl
+scikit-learn
